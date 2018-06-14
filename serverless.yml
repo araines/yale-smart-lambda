@@ -1,0 +1,29 @@
+service: yale-smart-bridge
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  region: eu-west-1
+  memorySize: 128
+
+functions:
+  arm:
+    handler: src/handler.arm
+    events:
+      - http:
+          path: arm
+          method: post
+
+  partarm:
+    handler: src/handler.partArm
+    events:
+      - http:
+          path: partarm
+          method: post
+
+  disarm:
+    handler: src/handler.disarm
+    events:
+      - http:
+          path: disarm
+          method: post

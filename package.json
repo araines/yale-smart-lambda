@@ -1,0 +1,16 @@
+{
+  "name": "yale-smart-lambda",
+  "version": "0.1.0",
+  "description": "Yale Smart Alarm bridge for AWS Lambda",
+  "main": "src/handler.js",
+  "engines": {
+    "node": "8.10"
+  },
+  "repository": "git@github.com:araines/yale-smart-lambda.git",
+  "author": "Andy Raines <andrew.raines@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2"
+  }
+}
