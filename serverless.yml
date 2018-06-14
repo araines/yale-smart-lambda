@@ -5,6 +5,8 @@ provider:
   runtime: nodejs8.10
   region: eu-west-1
   memorySize: 128
+  timeout: 30
+  logRetentionInDays: 7
 
 functions:
   arm:
